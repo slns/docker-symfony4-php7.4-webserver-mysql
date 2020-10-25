@@ -10,8 +10,10 @@
         "doctrine/doctrine-bundle": "^2.1",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.7",
+        "guzzlehttp/guzzle": "^7.2",
         "nelmio/api-doc-bundle": "^3.0",
         "phpdocumentor/reflection-docblock": "^5.2",
+        "phpunit/phpunit": "^9.4",
         "sensio/framework-extra-bundle": "^5.6",
         "symfony/asset": "4.4.*",
         "symfony/console": "4.4.*",
@@ -32,6 +34,7 @@
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
+        "symfony/phpunit-bridge": "^5.1",
         "symfony/stopwatch": "^4.4",
         "symfony/web-profiler-bundle": "^4.4"
     },
@@ -69,7 +72,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "test": "vendor/bin/phpunit"
     },
     "conflict": {
         "symfony/symfony": "*"
